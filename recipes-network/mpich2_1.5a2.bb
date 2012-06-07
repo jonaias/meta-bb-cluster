@@ -7,9 +7,7 @@ PROVIDES = "mpi"
 
 RDEPENDS = "ssh"
 
-##EXTRA_OECONF = "--with-pm=smpd --with-device=ch3:sock --disable-f77 --disable-fc"
-
-EXTRA_OECONF = "--with-pm=smpd --with-device=ch3:sock --disable-f77 --disable-fc" 
+EXTRA_OECONF = "--with-device=ch3:sock --disable-f77 --disable-fc" 
 
 
 #LIC_FILES_CHKSUM = “file://COPYRIGHT;md5=f821bfe211bf0d0c5c9b3c49cc5ceddc"

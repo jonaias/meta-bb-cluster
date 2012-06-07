@@ -5,15 +5,18 @@ LICENSE = "GPL"
 
 DEPENDS += "ti-linuxutils \
 	    dropbear \
-	    mpich2 \
-	    task-native-sdk \
+	    mpich \
 	    "
 
 IMAGE_INSTALL += "ti-cmem-module \
-		  ti-linuxutils-app\
+		  ti-lpm-module\
 		  ti-sdma-module\
+		  ti-dsplink-module\
+		  ti-dsplink-examples\
+		  ti-codec-engine-examples\
+		  kernel-module-dm9601\
 		  dropbear \
-		  mpich2 \
+		  mpich \
 		  task-native-sdk \
 		  "
 
