@@ -7,16 +7,13 @@ PROVIDES = "mpi"
 
 RDEPENDS = "ssh"
 
-EXTRA_OECONF = "--with-device=ch_p4 -disable-long-double--disable-f77" 
-
-
-SRC_URI = "ftp://ftp.mcs.anl.gov/pub/mpi/mpich-1.2.7p1.tar.gz;md5sum=7a4ac672b4b358ce519a93b70f771bee"
+SRC_URI = "ftp://ftp.mcs.anl.gov/pub/mpi/mpich-1.2.7p2.tar.gz;md5sum=e3aff3f9bb3293b3dd5467184a4f5353"
 
 
 inherit autotools pkgconfig
 
 do_configure () {
-    ./configure --with-device=ch_p4 -disable-long-double--disable-f77
+    ./configure --with-device=ch_p4 -disable-long-double--disable-f77 -rsh=ssh
 }
 
 do_install () {
