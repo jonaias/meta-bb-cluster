@@ -4,8 +4,7 @@ require ${TOPDIR}/sources/meta-angstrom/recipes-images/angstrom/console-image.bb
 LICENSE = "GPL"
 
 DEPENDS += "ti-linuxutils \
-	    dropbear \
-	    mpich \
+	    mpich2 \
 	    "
 
 IMAGE_INSTALL += "ti-cmem-module \
@@ -15,9 +14,9 @@ IMAGE_INSTALL += "ti-cmem-module \
 		  ti-dsplink-examples\
 		  ti-codec-engine-examples\
 		  kernel-module-dm9601\
-		  dropbear \
-		  mpich \
+		  mpich2 \
 		  task-native-sdk \
+		  coreutils\
 		  "
 
 export IMAGE_BASENAME = "bb-cluster-image"
